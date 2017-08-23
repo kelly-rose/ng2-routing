@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-not-found',
   template: `
-    <p>
-      not-found Works!
-    </p>
+    <div class="jumbotron text-center">
+      <h1>404 Not Found</h1>
+      <p>You may be lost. Follow the breadcrumbs back <a routerLink="/">home</a>.</p>
+    </div>
   `,
   styles: []
 })

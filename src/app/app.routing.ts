@@ -7,7 +7,11 @@ import {NotFoundComponent} from "./not-found/not-found.component";
 import {AboutUserComponent} from "./about/about-user.component";
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
+  {
+    path: '',
+    redirectTo: '/about',
+    pathMatch: 'full'
+  },
   {path: 'about', component: AboutComponent},
   {path: 'about/:username', component: AboutUserComponent},
 

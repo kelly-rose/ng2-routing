@@ -8,6 +8,7 @@ import {FormsModule} from "@angular/forms";
 import { ContactComponent } from './contact/contact.component';
 import {appRouting} from "./app.routing";
 import {DashboardModule} from "./dashboard/dashboard.module";
+import {AuthGuard} from "./shared/guards/auth-guard.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import {DashboardModule} from "./dashboard/dashboard.module";
     appRouting,
     DashboardModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

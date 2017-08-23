@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <p>
       about-section Works!
     </p>
+    <router-outlet></router-outlet>
   `,
   styles: []
 })

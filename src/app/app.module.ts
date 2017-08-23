@@ -10,7 +10,7 @@ import { DashboardUsersHomeComponent } from './dashboard/users/dashboard-users-h
 import { DashboardUsersDetailComponent } from './dashboard/users/dashboard-users-detail/dashboard-users-detail.component';
 import { DashboardUsersComponent } from './dashboard/users/dashboard-users/dashboard-users.component';
 import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found/not-found.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import {FormsModule} from "@angular/forms";
 import { ContactComponent } from './contact/contact.component';
 import {appRouting} from "./app.routing";

@@ -25,9 +25,15 @@ export class AboutUserComponent implements OnInit {
 
   ngOnInit() {
   //grab the current username
-  const username= this.route.snapshot.params['username'];
+  // const username= this.route.snapshot.params['username'];
+  //
+  // this.service.getUser(username).then(user=> this.user = user);
+  // }
 
-  this.service.getUser(username).then(user=> this.user = user);
+    this.route.data.forEach((data:{user:User}) => {
+      console.log(data);
+      this.user = data.user;
+    });
   }
 
   goBack(){

@@ -6,6 +6,7 @@ import {UserService} from "../shared/services/user.service";
 import {aboutRouting} from "./about.routing";
 import {CommonModule} from "@angular/common";
 import {AboutResolveService} from "./about-resolve.service";
+import {AboutUserResolveService} from "./about-user-resolve.service";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import {AboutResolveService} from "./about-resolve.service";
     AboutSectionComponent
   ],
   imports: [CommonModule,aboutRouting],
-  providers: [UserService,AboutResolveService]
+  providers: [UserService,AboutResolveService,AboutUserResolveService]
 })
 export class AboutModule {
 }

@@ -11,7 +11,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import {FormsModule} from "@angular/forms";
 import { ContactComponent } from './contact/contact.component';
 import {appRouting} from "./app.routing";
-import {AboutModule} from "./about/about.module";
 
 @NgModule({
   declarations: [
@@ -27,8 +26,7 @@ import {AboutModule} from "./about/about.module";
   imports: [
     BrowserModule,
     FormsModule,
-    appRouting,
-    AboutModule
+    appRouting
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class DashboardUsersDetailComponent implements OnInit {
+export class DashboardUserDetailsComponent implements OnInit {
 
   constructor() { }
 

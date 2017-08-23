@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import {FormsModule} from "@angular/forms";
 import { ContactComponent } from './contact/contact.component';
 import {appRouting} from "./app.routing";
+import {UserService} from "./shared/services/user.service";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {appRouting} from "./app.routing";
     FormsModule,
     appRouting
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

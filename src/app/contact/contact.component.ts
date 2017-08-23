@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-conatact',
+  selector: 'app-contact',
   template: `
     <p>
-      conatact Works!
+      contact Works!
     </p>
   `,
   styles: []
 })
-export class ConatactComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   constructor() { }
 

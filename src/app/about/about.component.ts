@@ -10,7 +10,7 @@ const users: User[] = [
     id: 1,
     name: 'Chris',
     username: 'sevilayha',
-    avatar: 'https://pbs.twimg.com/profile_images/422816823302561793/Hg3LD8K7_400x400.jpeg'
+    avatar: 'https://pbs.twimg.com/profile_images/502500686588690432/wXBzuCBj_400x400.jpeg'
   },
   {
     id: 2,
@@ -45,9 +45,9 @@ const users: User[] = [
 
       <div class="col-sm-4" *ngFor="let user of users">
         <div class="profile-card">
-          <img [src]="user.avatar" class="img-responsive img-circle">
+          <img [routerLink]="['/about',user.username]" [src]="user.avatar" class="img-responsive img-circle">
           <h2>{{ user.name }}</h2>
-          <p><a href="#">{{ user.username }}</a></p>
+          <p><a href="https://twitter.com/{{user.username}}">{{ user.username }}</a></p>
         </div>
       </div>
     </div>

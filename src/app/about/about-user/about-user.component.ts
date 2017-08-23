@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-about-user',
   template: `
     <p>
-      about-user Works!
-    </p>
+      i am an about user page.     </p>
   `,
   styles: []
 })

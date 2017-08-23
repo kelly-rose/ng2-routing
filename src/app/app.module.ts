@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { AboutUserComponent } from './about/about-user/about-user.component';
+import { AboutUserComponent } from './about/about-user.component';
 import { AboutSectionComponent } from './about/about-section/about-section.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardUsersHomeComponent } from './dashboard/users/dashboard-users-home/dashboard-users-home.component';

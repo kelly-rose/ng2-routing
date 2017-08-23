@@ -2,9 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { AboutUserComponent } from './about/about-user.component';
-import { AboutSectionComponent } from './about/about-section/about-section.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardUsersHomeComponent } from './dashboard/users/dashboard-users-home/dashboard-users-home.component';
 import { DashboardUsersDetailComponent } from './dashboard/users/dashboard-users-detail/dashboard-users-detail.component';
@@ -14,14 +11,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import {FormsModule} from "@angular/forms";
 import { ContactComponent } from './contact/contact.component';
 import {appRouting} from "./app.routing";
-import {UserService} from "./shared/services/user.service";
+import {AboutModule} from "./about/about.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    AboutUserComponent,
-    AboutSectionComponent,
     DashboardComponent,
     DashboardUsersHomeComponent,
     DashboardUsersDetailComponent,
@@ -33,9 +27,10 @@ import {UserService} from "./shared/services/user.service";
   imports: [
     BrowserModule,
     FormsModule,
-    appRouting
+    appRouting,
+    AboutModule
   ],
-  providers: [UserService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

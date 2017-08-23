@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-export class User {
-  id: number;
-  name: string;
-  username: string;
-  avatar: string;
-}
+import {User} from "../shared/models/user";
+
 const users: User[] = [
   {
     id: 1,

@@ -1,23 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "../shared/models/user";
 import {UserService} from "../shared/services/user.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-about',
   styles: [`
-    .profile-card   {
+    .profile-card {
       background: #f3f3f3;
       border-radius: 4px;
       padding: 30px;
       text-align: center;
     }
-    .profile-card img  {
+
+    .profile-card img {
       max-width: 50%;
       margin: 15px auto;
     }
   `],
   template: `
-    <div class="row" *ngIf="users">
+    <div class="row">
 
       <div class="col-sm-4" *ngFor="let user of users">
         <div class="profile-card">
@@ -30,11 +32,18 @@ import {UserService} from "../shared/services/user.service";
   `
 })
 export class AboutComponent implements OnInit {
-  users:User[];
-  constructor(private service:UserService) { }
+  users: User[];
+
+  constructor(private service: UserService, private route: ActivatedRoute) {
+  }
 
   ngOnInit() {
-    this.service.getUsers().then(users=>this.users=users);
+    // this.service.getUsers().then(users=>this.users=users);
+
+    this.route.data.forEach((data:{users:User[]}) => {
+      console.log(data);
+      this.users = data.users;
+    });
   }
 
 }
